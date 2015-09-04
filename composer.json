@@ -1,0 +1,24 @@
+{
+    "name": "persgroep/mars-rover-kata",
+    "description": "Mars Rover Kata skeleton",
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "mockery/mockery": "^0.9.4"
+    },
+    "authors": [
+        {
+            "name": "VNU Development",
+            "email": "development@vnuvacaturemedia.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Persgroep\\Kata\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
