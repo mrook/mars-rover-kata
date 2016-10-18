@@ -1,6 +1,6 @@
 <?php
 
-namespace Persgroep\Kata\MarsRover;
+namespace Kata\MarsRover;
 
 class Rover
 {

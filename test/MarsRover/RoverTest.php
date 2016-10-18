@@ -1,8 +1,8 @@
 <?php
 
-namespace Persgroep\Kata\Test\MarsRover;
+namespace Kata\Test\MarsRover;
 
-use Persgroep\Kata\MarsRover\Rover;
+use Kata\MarsRover\Rover;
 
 class RoverTest extends \PHPUnit_Framework_TestCase
 {
