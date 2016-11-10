@@ -30,12 +30,6 @@ class RoverTest extends \PHPUnit_Framework_TestCase
         self::assertSame($this->direction, $this->rover->getDirection());
     }
 
-    public function testRoverCannotYetProcessCommands()
-    {
-        self::expectException(NotImplementedException::class);
-        $this->rover->processCommands(array());
-    }
-
     public function testRoverCannotYetMoveForward()
     {
         self::expectException(NotImplementedException::class);
