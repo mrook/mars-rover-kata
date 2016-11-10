@@ -34,4 +34,33 @@ class Rover
     {
         return $this->direction;
     }
+
+    /**
+     * @param array $commands
+     * @throws NotImplementedException
+     */
+    public function processCommands($commands = array())
+    {
+        throw new NotImplementedException();
+    }
+
+    public function moveForward()
+    {
+        throw new NotImplementedException();
+    }
+
+    public function moveBackward()
+    {
+        throw new NotImplementedException();
+    }
+
+    public function turnLeft()
+    {
+        throw new NotImplementedException();
+    }
+
+    public function turnRight()
+    {
+        throw new NotImplementedException();
+    }
 }
