@@ -19,4 +19,20 @@ class Position
         $this->x = $x;
         $this->y = $y;
     }
+
+    /**
+     * @return int
+     */
+    public function getX()
+    {
+        return $this->x;
+    }
+
+    /**
+     * @return int
+     */
+    public function getY()
+    {
+        return $this->y;
+    }
 }

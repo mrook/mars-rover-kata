@@ -1,17 +1,21 @@
 <?php
 
-namespace Kata\Test\MarsRover;
-
-use Kata\MarsRover\Position;
-use Kata\MarsRover\Rover;
+namespace Kata\MarsRover;
 
 class RoverTest extends \PHPUnit_Framework_TestCase
 {
-    public function testCanInitializePosition()
+    public function testCanRetrieveInitializePosition()
     {
-        $rover = new Rover();
         $position = new Position(1, 2);
-        $rover->setPosition($position);
+        $rover = new Rover($position, new Direction());
         self::assertSame($position, $rover->getPosition());
+    }
+    
+    public function testCanRetrieveInitializeDirection()
+    {
+        $position = new Position(1, 2);
+        $direction = new Direction(Direction::EAST);
+        $rover = new Rover($position, $direction);
+        self::assertSame($direction, $rover->getDirection());
     }
 }
