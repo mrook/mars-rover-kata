@@ -2,7 +2,9 @@
 
 namespace Kata\MarsRover;
 
-class RoverTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class RoverTest extends TestCase
 {
     /** @var Position */
     protected $position;
@@ -13,7 +15,7 @@ class RoverTest extends \PHPUnit_Framework_TestCase
     /** @var Rover */
     protected $rover;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->position = new Position(1, 2);
         $this->direction = new Direction(Direction::EAST);

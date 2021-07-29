@@ -2,7 +2,9 @@
 
 namespace Kata\MarsRover;
 
-class DirectionTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class DirectionTest extends TestCase
 {
     public function testDefaultInitialDirectionIsNorth() {
         $direction = new Direction();

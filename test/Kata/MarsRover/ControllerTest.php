@@ -2,20 +2,21 @@
 
 namespace Kata\MarsRover;
 
-use Prophecy\Prophecy\ObjectProphecy;
+use Mockery;
+use Mockery\Adapter\Phpunit\MockeryTestCase;
 
-class ControllerTest extends \PHPUnit_Framework_TestCase
+class ControllerTest extends MockeryTestCase
 {
-    /** @var ObjectProphecy */
+    /** @var Rover */
     protected $rover;
 
     /** @var Controller */
     protected $controller;
 
-    protected function setUp()
+    protected function setUp(): void
     {
-        $this->rover = self::prophesize(Rover::class);
-        $this->controller = new Controller($this->rover->reveal());
+        $this->rover = Mockery::mock(Rover::class);
+        $this->controller = new Controller($this->rover);
     }
 
     public function testRoverCannotYetProcessCommands()

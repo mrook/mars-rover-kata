@@ -2,7 +2,9 @@
 
 namespace Kata\MarsRover;
 
-class PositionTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class PositionTest extends TestCase
 {
     public function testCanRetrieveCoordinates() {
         $position = new Position(1, 2);
